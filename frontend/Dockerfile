@@ -10,6 +10,6 @@ COPY . .
 
 EXPOSE 3000
 
-RUN npm run build
+ENV NODE_ENV=development
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "dev"]
